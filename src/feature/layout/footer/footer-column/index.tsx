@@ -16,9 +16,14 @@ const FooterColumn = ({
     <div className="flex flex-col gap-4">
       <h3 className="uppercase text-text-additional-grey-primary">{title}</h3>
       <div className="flex flex-col">
-        {arrayLinks.map((item) => {
+        {arrayLinks.map((item, index) => {
           return (
-            <HoverLink label={item.label} icon={item.icon} path={item.link} />
+            <HoverLink
+              label={item.label}
+              icon={item.icon}
+              path={item.link}
+              key={`${item.label}_${index}`}
+            />
           );
         })}
       </div>

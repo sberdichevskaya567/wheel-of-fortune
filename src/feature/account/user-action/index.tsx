@@ -5,7 +5,7 @@ import { ActionData } from "@/widgets/user-action/const";
 
 const UserActions = (): JSX.Element => {
   return (
-    <div className="grid grid-cols-3 gap-6 items-start mr-[33px] mb-10 max-laptop:grid-cols-2 max-tablet:grid-cols-1">
+    <div className="grid grid-cols-3 gap-6 items-start mr-[33px] mb-10 max-laptop:mr-0 max-laptop:grid-cols-2 max-tablet:grid-cols-1">
       {ActionData.map((item, index) => {
         return (
           <BlockAction

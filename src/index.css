@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Kelly Slab';
+    src: url('../public/fonts/KellySlab-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alumni Sans';
+    src: url('../public/fonts/AlumniSans-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+
+:root {
+    background-color: #1E2025;
+    font-family: 'Kelly Slab', serif;
+    color: #FDFDFD;
+}
+
+body {
+    @apply w-full laptop-s:max-w-[1176px] laptop-s:mx-auto max-laptop:px-12 max-laptop-s:px-6 max-tablet:px-4;
+}
+
+main {
+    margin-top: 40px;
+}
+
+p, a, button, span {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+h1 {
+    font-size: 44px;
+    line-height: 44px;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.font-alumni {
+    font-family: 'Alumni Sans';
+    letter-spacing: 0.01em;
+}
+
+.font-kelly {
+    font-family: 'Kelly Slab';
+}
+
+.border {
+   @apply border-[1px] border-border-additional-grey-secondary rounded-lg p-6
+}
+
+@theme {
+    --color-bg-primary: #1E2025;
+    --color-bg-secondary: #FDFDFD;
+    --color-bg-accent: #FF0633;
+
+    --color-text-additional-grey-primary: #C3C2BD;
+    --color-text-contrast: #FDFDFD;
+    --color-text-fill: #1E2025;
+    --color-text-accent: #FF0633;
+
+    --color-border-additional-grey-secondary: #2E3139;
+    --color-border-contrast: #FDFDFD;
+    --color-border-accent: #FF0633;
+
+    --font-alumni: 'Alumni Sans', sans-serif;
+
+
+    --breakpoint-desktop: 1921px;
+    --breakpoint-laptop: 1280px;
+    --breakpoint-laptop-s: 1024px;
+    --breakpoint-tablet-l: 900px;
+    --breakpoint-tablet: 768px;
+    --breakpoint-mobile: 375px;
+
+}

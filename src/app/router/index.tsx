@@ -1,4 +1,4 @@
-import { createBrowserRouter, createHashRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import { Navigate } from "react-router-dom";
 
 import AccountPage from "@/pages/account";
